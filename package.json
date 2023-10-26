@@ -1,0 +1,24 @@
+{
+  "name": "expense-tracker-v2",
+  "version": "2.0.0",
+  "description": "Budget tracker app built with MERN",
+  "main": "index.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Tim Baker",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mongoose": "^7.6.3",
+    "nodemon": "^3.0.1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "dotenv": "^16.3.1"
+  }
+}
