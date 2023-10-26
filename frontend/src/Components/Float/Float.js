@@ -1,8 +1,9 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
+import { useFullScreen } from '../../utils/useFullScreen.js';
 
 const Float = () => {
-  const { width, height } = useWindowSize();
+  const { width, height } = useFullScreen();
 
   console.log(width, height);
 
