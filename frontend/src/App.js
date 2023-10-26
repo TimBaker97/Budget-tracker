@@ -2,13 +2,14 @@ import styled from 'styled-components';
 // import bg from "./img/bg.png";
 import { MainLayout } from './styles/Layouts.js';
 import Float from './Components/Float/Float.js';
+import Navigation from './Components/Navigation/Navigation.jsx';
 
 function App() {
   return (
     <AppStyled /*bg={bg}*/ className="App">
       <Float />
       <MainLayout>
-        <h1>Hello tim</h1>
+        <Navigation />
       </MainLayout>
     </AppStyled>
   );
